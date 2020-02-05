@@ -1,0 +1,77 @@
+.main-content
+    display: flex
+    align-items: center
+    max-width: 975px
+        
+    &__play
+        border: none
+        background: $playBtn-bg
+        width: 100px
+        height: 100px
+        border-radius: 50%
+        position: relative
+        margin: auto
+
+        &:before
+            content: ""
+            width: 132px
+            height: 132px
+            background: $playBtn-bg
+            opacity: 0.5
+            position: absolute
+            border-radius: 50%
+            left: -16px
+            top: -16px
+
+.play
+    &__img
+        position: relative
+        transform: translateX(5px)
+
+
+.content
+    &__genre
+        font-size: 14px
+        line-height: 16px
+        display: block
+        margin-bottom: 16px
+
+    &__rating
+        display: flex
+        align-items: center
+        margin-bottom: 10px
+
+    &__title
+        font: 500 76px/89px 'MasonChronicles', serif
+        margin-bottom: 10px
+
+    &__description
+        font-size: 14px
+        line-height: 150%
+        max-width: 458px
+        margin-bottom: 40px
+
+    &__btn
+        border: none
+        padding: 22px 72px
+        background: $contentBtn-bg
+        border-radius: 8px
+
+        font-weight: bold
+        font-size: 14px
+        line-height: 16px
+
+        color: $contentBtn-text
+
+.rating
+    &__number
+        font-size: 12px
+        line-height: 14px
+    
+    &__stars
+        display: flex
+        align-items: center
+        margin-right: 9px
+       
+    &__img
+        margin-right: 4px
