@@ -1,9 +1,22 @@
+html
+    box-sizing: border-box
+
+    *, *:before, *:after
+        box-sizing: inherit
+    
 .page
-    background: $pageBg
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    
+    background: url('../img/background.jpg') no-repeat top right 20%
+    background-color: $pageBg
     font-family: 'Roboto', sans-serif
     font-style: normal
     font-weight: normal
     color: $pageText-color
+
+    min-height: 100vh   
 
 
 .container

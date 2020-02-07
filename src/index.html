@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>The Witcher</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body class="page">
     <header>
         <div class="container">
@@ -22,9 +25,12 @@
                 </nav>
                 <!-- /.header__menu-list -->
                 <div class="header__social social">
-                    <a href="#" class="social__link"><img src="./img/social/twitter.svg" alt="twitter" class="social__img"></a>
-                    <a href="#" class="social__link"><img src="./img/social/instagram.svg" alt="instagram" class="social__img"></a>
-                    <a href="#" class="social__link"><img src="./img/social/facebook.svg" alt="facebook" class="social__img"></a>
+                    <a href="#" class="social__link"><img src="./img/social/twitter.svg" alt="twitter"
+                            class="social__img"></a>
+                    <a href="#" class="social__link"><img src="./img/social/instagram.svg" alt="instagram"
+                            class="social__img"></a>
+                    <a href="#" class="social__link"><img src="./img/social/facebook.svg" alt="facebook"
+                            class="social__img"></a>
                 </div>
                 <!-- /.header__social -->
             </div>
@@ -32,9 +38,9 @@
         </div>
         <!-- /.container -->
     </header>
-    <main>
+    <main class="main">
         <div class="container">
-            <div class="main-content">
+            <div class="main__main-content main-content">
                 <div class="main-content__content contant">
                     <span class="content__genre">2019, фэнтези</span>
                     <div class="content__rating rating">
@@ -54,7 +60,10 @@
                     </div>
                     <!-- /.content__rating -->
                     <h1 class="content__title">Ведьмак</h1>
-                    <p class="content__description">Ведьмак Геральт, мутант и убийца чудовищ, на своей верной лошади по кличке Плотва путешествует по Континенту. За тугой мешочек чеканных монет этот мужчина избавит вас от всякой настырной нечисти — хоть от чудищ болотных, оборотней и даже заколдованных принцесс.</p>
+                    <p class="content__description">Ведьмак Геральт, мутант и убийца чудовищ, на своей верной лошади по
+                        кличке Плотва путешествует по Континенту. За тугой мешочек чеканных монет этот мужчина избавит
+                        вас от всякой настырной нечисти — хоть от чудищ болотных, оборотней и даже заколдованных
+                        принцесс.</p>
                     <button class="content__btn">Смотреть онлайн</button>
                 </div>
                 <!-- /.main-content__content -->
@@ -64,8 +73,88 @@
                 <!-- /.main-content__play -->
             </div>
             <!-- /.main-content -->
+            <div class="main__series series">
+                <!-- Slider main container -->
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="series__card series__card--1">
+                                <span class="series__subtitle">Серия #1</span>
+                                <h2 class="series__title">Начало конца</h2>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="series__card series__card--2">
+                                <span class="series__subtitle">Серия #2</span>
+                                <h2 class="series__title">Четыре знака</h2>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="series__card series__card--3">
+                                <span class="series__subtitle">Серия #3</span>
+                                <h2 class="series__title">Предательская луна</h2>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="series__card series__card--4">
+                                <span class="series__subtitle">Серия #4</span>
+                                <h2 class="series__title">Банкеты, ублюдки и похороны</h2>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="series__card series__card--5">
+                                <span class="series__subtitle">Серия #5</span>
+                                <h2 class="series__title">Желания из бутылки</h2>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="series__card series__card--6">
+                                <span class="series__subtitle">Серия #6</span>
+                                <h2 class="series__title">Редкие виды</h2>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="series__card series__card--7">
+                                <span class="series__subtitle">Серия #7</span>
+                                <h2 class="series__title">Перед падением</h2>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="series__card series__card--8">
+                                <span class="series__subtitle">Серия #8</span>
+                                <h2 class="series__title">Нечто большее</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="series__arrow"></button>
+            </div>
+            <!-- /.series -->
         </div>
         <!-- /.container -->
     </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__footer-content">
+                <div class="footer-content__footer-left">
+                    <span class="footer-left__copyright">© 2020 The Witcher. All right reserved.</span>
+                </div>
+                <!-- /.footer-content__left -->
+                <div class="footer-content__footer-right footer-right">
+                    <nav class="footer-right__menu">
+                        <a href="#" class="footer-right__link">Terms of Service</a>
+                        <a href="#" class="footer-right__link">Privacy Policy</a>
+                        <a href="#" class="footer-right__link">Legal</a>
+                    </nav>
+                </div>
+                <!-- /.footer-contrnt__right -->
+            </div>
+        </div>
+    </footer>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
+
 </html>
