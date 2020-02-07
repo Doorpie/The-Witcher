@@ -88,6 +88,7 @@ html *, html *:before, html *:after {
     top: 40px;
     right: 35px;
     cursor: pointer;
+    z-index: 999;
   }
   .menu-btn:before {
     content: "";
@@ -143,6 +144,7 @@ html *, html *:before, html *:after {
     background: #9D2929;
     width: 250px;
     padding-bottom: 23px;
+    z-index: 999;
   }
   .header--active {
     display: -webkit-box;
