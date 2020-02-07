@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -35,6 +37,7 @@
                 <!-- /.header__social -->
             </div>
             <!-- /.header -->
+            <div class="menu-btn"></div>
         </div>
         <!-- /.container -->
     </header>
@@ -42,8 +45,8 @@
         <div class="container">
             <div class="main__main-content main-content">
                 <div class="main-content__content contant">
-                    <span class="content__genre">2019, фэнтези</span>
-                    <div class="content__rating rating">
+                    <span class="content__genre animated fadeInRight">2019, фэнтези</span>
+                    <div class="content__rating rating animated fadeInRight">
                         <div class="rating__stars">
                             <img src="./img/star.svg" alt="star" class="rating__img">
                             <img src="./img/star.svg" alt="star" class="rating__img">
@@ -59,17 +62,17 @@
                         <div class="rating__number">7/10</div>
                     </div>
                     <!-- /.content__rating -->
-                    <h1 class="content__title">Ведьмак</h1>
-                    <p class="content__description">Ведьмак Геральт, мутант и убийца чудовищ, на своей верной лошади по
+                    <h1 class="content__title animated fadeInRight">Ведьмак</h1>
+                    <p class="content__description animated fadeInRight">Ведьмак Геральт, мутант и убийца чудовищ, на своей верной лошади по
                         кличке Плотва путешествует по Континенту. За тугой мешочек чеканных монет этот мужчина избавит
                         вас от всякой настырной нечисти — хоть от чудищ болотных, оборотней и даже заколдованных
                         принцесс.</p>
-                    <button class="content__btn">Смотреть онлайн</button>
+                    <a data-fancybox href="https://www.youtube.com/watch?v=PS8rTBCIKL8" class="content__btn animated fadeInRight">Смотреть трейлер</a>
                 </div>
                 <!-- /.main-content__content -->
-                <button class="main-content__play play">
+                <a data-fancybox href="https://www.youtube.com/watch?v=PS8rTBCIKL8" class="main-content__play play">
                     <img src="./img/play-button.svg" alt="play" class="play__img">
-                </button>
+                </a>
                 <!-- /.main-content__play -->
             </div>
             <!-- /.main-content -->
@@ -138,7 +141,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__footer-content">
-                <div class="footer-content__footer-left">
+                <div class="footer-content__footer-left footer-left">
                     <span class="footer-left__copyright">© 2020 The Witcher. All right reserved.</span>
                 </div>
                 <!-- /.footer-content__left -->
@@ -153,6 +156,8 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="./js/jquery.fancybox.min.js"></script>
     <script src="./js/swiper.min.js"></script>
     <script src="./js/main.js"></script>
 </body>

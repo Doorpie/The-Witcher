@@ -14,6 +14,9 @@
     
 .main-content   
     &__play
+        display: flex
+        align-items: center
+        justify-content: center
         border: none
         background: $playBtn-bg
         width: 100px
@@ -32,6 +35,7 @@
             border-radius: 50%
             left: -16px
             top: -16px
+            animation: pulse 0.5s ease-in-out 2s infinite
 
 .play
     &__img
@@ -45,23 +49,29 @@
         line-height: 16px
         display: block
         margin-bottom: 16px
+        animation-delay: 0.1s
 
     &__rating
         display: flex
         align-items: center
         margin-bottom: 10px
+        animation-delay: 0.3s
 
     &__title
         font: 500 76px/89px 'MasonChronicles', serif
         margin-bottom: 10px
+        animation-delay: 0.5s
 
     &__description
         font-size: 14px
         line-height: 150%
         max-width: 458px
         margin-bottom: 40px
+        animation-delay: 0.7s
 
     &__btn
+        display: inline-block
+        text-decoration: none
         border: none
         padding: 22px 72px
         background: $contentBtn-bg
@@ -72,6 +82,9 @@
         line-height: 16px
 
         color: $contentBtn-text
+
+        &:active
+            color: $contentBtn-text
 
 .rating
     &__number
@@ -150,3 +163,24 @@
 
         position: absolute
         right: 0
+
+// responsive
+@media (max-width: 767px) 
+    .main 
+        &__main-content
+            margin-top: 196px
+
+        &__series
+            width: 80%
+
+    .main-content   
+        &__play
+            display: none
+
+    .content
+        &__title
+            font-size: 56px
+
+            
+
+            

@@ -21,5 +21,88 @@
         margin-left: 20.7px
         text-decoration: none
 
+.menu-btn
+    display: none
 
+@media (max-width: 575px)
+    .menu-btn
+        display: block
+        border: none
+        width: 30px
+        height: 2px
+        position: absolute
+        background: $menuBtn
+        top: 40px
+        right: 35px
+        cursor: pointer
+
+        &:before
+            content: ""
+            display: block
+            width: 30px
+            height: 2px
+            background: $menuBtn
+            margin-top: -7px
+            top: 0
+            left: 0
+            transition: transform 0.2s
+
+        &:after
+            content: ""
+            display: block
+            width: 30px
+            height: 2px
+            background: $menuBtn
+            margin-top: 12px
+            top: 0
+            left: 0
+            transition: transform 0.2s
+
+    .menu-btn--active
+        height: 0
+
+        &:before
+            transform: rotate(45deg)
+            margin-top: 0
+
+        &:after
+            transform: rotate(-45deg)
+            margin-top: -1px
+            right: 20px
+
+    .header
+        display: none
+        flex-direction: column
+        position: absolute
+        right: 0
+        top: 0
+        background: $hederBg-m
+        width: 250px
+        padding-bottom: 23px
+
+        &--active
+            display: flex
+
+        &__logo
+            margin-bottom: 25px
+
+        &__menu-list
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin: auto
+            order: 2
+
+        &__social
+            order: 1
+            margin-bottom: 22px
+
+    .menu-list
+        &__link
+            margin-right: 0
+            margin-bottom: 17px        
+
+    .social
+        &__link:first-child
+            margin-left: 0
     

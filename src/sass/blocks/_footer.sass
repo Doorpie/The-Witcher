@@ -6,7 +6,7 @@
         align-items: center
         justify-content: space-between
         display: flex
-        padding: 20px 123px
+        padding: 20px 0
         margin-top: auto
 
 .footer-left
@@ -23,3 +23,24 @@
         font-size: 14px
         line-height: 20px
         color: $footerText
+
+// responsive
+
+@media (max-width: 767px) 
+    .footer   
+        &__footer-content 
+            flex-direction: column
+            align-items: flex-start
+            padding: 20px 0
+
+    .footer-left
+        &__copyright
+            display: block
+            margin-bottom: 8px
+
+    .footer-right
+        &__link:first-child
+            margin-left: 0
+
+
+    
