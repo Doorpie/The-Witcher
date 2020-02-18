@@ -1,4 +1,6 @@
-var mySwiper = new Swiper('.swiper-container', {
+"use strict";
+
+let mySwiper = new Swiper('.swiper-container', {
     slidesPerView: 1,
     loop: true,
     navigation: {
